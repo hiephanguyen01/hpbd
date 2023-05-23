@@ -1081,6 +1081,7 @@ audio {
   height: 183px;
   background-repeat: no-repeat no-repeat;
   background-size: 100px 183px;
+  margin-top: 70px;
 }
 .balloons h2 {
   text-transform: uppercase;
@@ -1291,7 +1292,7 @@ audio {
   margin-top: 50px;
 }
 .message {
-  margin-top: 200px;
+  margin-top: 250px;
   display: none;
 }
 .message p {
@@ -1322,10 +1323,33 @@ audio {
   color: #fff;
   background-color: #466baf;
 }
-
+/* 
 /*controlling tablet width*/
-/*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
+/* @media only screen and (max-width: 720px) {
+  .container {
+    -webkit-transform: scale(0.9);
+  }
+} */
+@media (max-width: 720px) {
+  .balloons {
+    position: fixed;
+    bottom: -200px;
+    opacity: 0.6;
+    z-index: 99;
+    width: 100px;
+    height: 183px;
+    background-repeat: no-repeat no-repeat;
+    margin-top: 70px;
+  }
+  .balloons h2 {
+    text-transform: uppercase;
+    font-family: "Signika", sans-serif;
+    font-size: 25px;
+    color: #bf4136;
+    text-shadow: 5px 5px 5px #fff;
+    display: none;
+  }
+  .cake {
+    margin-top: 120px;
+  }
+}
