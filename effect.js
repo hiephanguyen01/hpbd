@@ -66,7 +66,10 @@ function loopThree() {
     loopThree();
   });
 }
-
+document.getElementById("turn_on").addEventListener("click", function () {
+  var audio = document.getElementById("audioPlayer");
+  audio.play();
+});
 $("document").ready(function () {
   var vw;
   $(window).resize(function () {
@@ -96,8 +99,8 @@ $("document").ready(function () {
       .delay(2000)
       .promise()
       .done(function () {
-        var audio = $(".song")[0];
-        audio.play();
+        // var audio = $(".song")[0];
+        // audio.play();
         $("#bulb_yellow").addClass("bulb-glow-yellow-after");
         $("#bulb_red").addClass("bulb-glow-red-after");
         $("#bulb_blue").addClass("bulb-glow-blue-after");
